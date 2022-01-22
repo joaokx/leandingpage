@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks Responsivo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloud">
+</head>
+<body>
+     <section>
+         <div class="circle"></div>
+         <header>
+            <a href="#"><img src="assets/logo.png" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Duvidas</a></li>
+                <li><a href="#">Contatos</a></li>
+            </ul>
+         </header>
+         <div class="main">
+             <div class="textBox">
+                 <h2>Não é só Café<br>É<spam> Starbuscks</spam></h2>
+                 <p>Lorem ipsum dolor, a,et consectetur adipsicing elit, Itaque, earum ab.Dolor repellat laborum  officissis quasi placet corpois fugiat </p>
+                 <a href="#">Saiba mais</a>
+                 <div class="imgBox">
+                 <img src="assets/img1.png" class="starbucks">
+                 
+
+             </div>
+         </div>
+         <ul class="drinks">
+             <li><img src="assets/thumb1.png" onclick="slider('assets/img1.png');changeColor('#017143')"></li>
+             <li><img src="assets/thumb2.png"onclick="slider('assets/img2.png');changeColor('#ff05ff')"></li>
+             <li><img src="assets/thumb3.png"onclick="slider('assets/img3.png');changeColor('#5f005f')"></li>
+
+         </ul>
+         <ul class="socials">
+             <li><a href="#"><img src="assets/facebook.png"></a></li>
+             <li><a href="#"><img src="assets/twitter.png"></a></li>
+             <li><a href="#"><img src="assets/instagram.png"></a></li>
+         </ul>
+     </section>
+     <script>
+         function slider(anything){
+             document.querySelector('.starbucks').src = anything
+         }
+         function changeColor(color){
+             const circle = document.querySelector('.circle');
+             circle.style.background = color;
+         }
+
+     </script>
+</body>
+<footer>
+    <div class="container">
+        <div class="row">
+        
+            <div class="col-xs-12 col-md-4 col-lg-4 col1">
+                <b>STARBUCK´S</b>
+                <address>
+                    <p>
+                        Shopping Palladium,
+                        <br />R. Presidente Kennedy, 4121, Port&atilde;o, Curitiba - PR
+                        <br />Boullevard Gourmet
+                    </p>
+                    <p>
+                        Shopping Jockey Plaza,
+                        <br />R. Konrad Adenauer, 370,
+                        <br />Tarum&atilde;, Curitiba - PR
+                    </p>
+                </address>
+            </div>
+
+            <div class="col-md-4 col-lg-4 col2 text-center">
+                <img src="/assets/logo.png" width="14px" />
+            </div>
+
+            <div class="col-xs-12 col-md-4 col-lg-4 col3 text-right">
+                Shopping Palladium
+                <br />(41) 3212-3266
+                <br />
+                <br />Shopping Jockey Plaza
+                <br />(41) 3216-1049
+                <br />
+                <br />contato@starbucks.com.br
+                <br />Aberto todos os dias das 11h &agrave;s 23h
+                
+            </div>
+
+        </div>
+
+        <div id="copyright" class="row">
+            <div class="col-lg-12 text-center">
+                2022 &copy; Todos os direitos reservados.
+                &nbsp;
+                <a href="http://www.agenciaautentica.com.br/"><img src="/assets/logo.png" border="0" height="10" /></a>
+                &nbsp;|&nbsp;
+                <img title="Position1 - Aplicativos | Sistemas | Websites" alt="Position1" src="/assets/logo.png" border="0" height="10" />
+            </div>
+        </div>
+
+    </div>
+</footer>
+</html>
